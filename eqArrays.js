@@ -3,11 +3,9 @@
 //in the second array. If any of the elements do not match, return false.
 //3.If the loop finishes without returning false, the arrays are equal, so return true.
 
-
 /* In the eqArrays function, when the loop is at a particular index i,
 it compares the value at that index in the first array (first[i]) with
 the value at the same index in the second array (second[i]).*/
-
 
 const eqArrays = function(first, second) {
   if (first.length !== second.length) {
