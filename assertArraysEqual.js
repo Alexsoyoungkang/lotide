@@ -3,17 +3,7 @@ it compares the value at that index in the first array (first[i]) with
 the value at the same index in the second array (second[i]).*/
 
 
-const eqArrays = function(first, second) {
-  if (first.length !== second.length) {
-    return false;
-  }
-  for (let i = 0; i < first.length; i++) {
-    if (first[i] !== second[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arrayOne, arrayTwo) {
   if (eqArrays(arrayOne, arrayTwo)) {
@@ -23,7 +13,4 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
   }
 };
 
-//test cases
-//assertArraysEqual([1, 2, 3], [1, 2]);
-//assertArraysEqual([1, 2, 3], [1, 2, 3]);
-//assertArraysEqual(1, [1, 2, 3]);
+module.exports = assertArraysEqual;
