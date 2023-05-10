@@ -2,14 +2,13 @@
 it compares the value at that index in the first array (first[i]) with
 the value at the same index in the second array (second[i]).*/
 
-
 const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arrayOne, arrayTwo) {
   if (eqArrays(arrayOne, arrayTwo)) {
-    console.log(`Assertion Passed: ${arrayOne} === ${arrayTwo}`);
+    return `Assertion Passed: ${arrayOne} === ${arrayTwo}`;
   } else {
-    console.log(`Assertion Failed: ${arrayOne} !== ${arrayTwo}`);
+    return `Assertion Failed: ${arrayOne} !== ${arrayTwo}`;
   }
 };
 
