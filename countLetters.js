@@ -1,5 +1,5 @@
 const countLetters = function(str) {
-  const  counts = {};
+  const counts = {};
 
   for (const letter of str) {
     if (letter !== " ") {
