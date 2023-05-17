@@ -1,8 +1,8 @@
 {
   "name": "@alexsoyoungkang/lotide",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Lotide library with functions built and tests using Mocha and Chai",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
