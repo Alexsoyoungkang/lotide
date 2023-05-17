@@ -48,24 +48,4 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-
-//We need to use that return value in combination with assertEquals to test if the function is working correctly.
-assertObjectsEqual(shirtObject , anotherShirtObject);
-
-assertObjectsEqual(shirtObject , longSleeveShirtObject);
-
-assertObjectsEqual(multiColorShirtObject, anotherMultiColorShirtObject);
-
-assertObjectsEqual(multiColorShirtObject, longSleeveMultiColorShirtObject);
-
-// const object1 = { a: '1', b: 2 };
-// const object2 = { b: 2, a: '1' };
-
-// assertObjectsEqual(object1, object2);
+module.exports = assertObjectsEqual;

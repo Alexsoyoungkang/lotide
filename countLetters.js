@@ -30,30 +30,4 @@ const countLetters = function(str) {
   } return counts;
 };
 
-const result = countLetters("lighthouse in the house");
-console.log(result);
-console.log(result["g"]);
-
-assertEqual(result["g"], 1);
-assertEqual(result[" "],undefined);
-assertEqual(result["h"], 4);
-assertEqual(result["t"], 2);
-
-
-
-
-
-/*const countOnly = function(allItems, itemsToCount) {
-  let results = {};
-  for (const item of allItems) { // "karl", "Salima" ...
-    if (itemsToCount[item]) { // "Jason": true, "Fang": true
-      if (results[item]) {
-        results[item] += 1;  //-> {"Jason" : 2}
-      } else {
-        results[item] = 1; // results = {"Jason" : 1}
-      }
-    }
-  }
-  return results;
-};
-*/
+module.exports = countLetters;
