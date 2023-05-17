@@ -1,12 +1,3 @@
-/*1. let middleNum = [];
-  2. if - one or two items in an array returns an ampty array
-  3. if - even number
-  4. if - odd number
-  Math.floor(array.length/2) -> to get the middle value from the array(odd # of elements)
-  4. push
-  5. return middleNum
-*/
-
 const middle = function(array) {
   let middleNum = [];
   if (array.length <= 2) {

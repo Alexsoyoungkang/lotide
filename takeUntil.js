@@ -1,7 +1,3 @@
-const eqArrays = require('./eqArrays')
-const assertArraysEqual = require('./assertArraysEqual');
-
-
 //return a "slice of the array with elements taken from the beginning.
 //It should keep going until the callback/predicate returns a truthy value.
 const takeUntil = function(array, callback) {

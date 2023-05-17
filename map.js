@@ -1,23 +1,3 @@
-const eqArrays = function(first, second) {
-  if (first.length !== second.length) {
-    return false;
-  }
-  for (let i = 0; i < first.length; i++) {
-    if (first[i] !== second[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arrayOne, arrayTwo) {
-  if (eqArrays(arrayOne, arrayTwo)) {
-    console.log(`Assertion Passed: ${arrayOne} === ${arrayTwo}`);
-  } else {
-    console.log(`Assertion Failed: ${arrayOne} !== ${arrayTwo}`);
-  }
-};
-
 // Our map function will take in two arguments:
 // An array to map
 // A callback function
