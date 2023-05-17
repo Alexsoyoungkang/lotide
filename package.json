@@ -1,6 +1,6 @@
 {
   "name": "@alexsoyoungkang/lotide",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Lotide library with functions built and tests using Mocha and Chai",
   "main": "index.js",
   "directories": {
